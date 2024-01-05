@@ -23,4 +23,4 @@ runs:
       # use & to run in background for >4.0.0
       run: |
         npm install -g @mockoon/cli@${{ inputs.version }}
-        mockoon-cli start --daemon-off --data ${{ inputs.data-file }} --port ${{ inputs.port }} --log-transaction
+        mockoon-cli start --data ${{ inputs.data-file }} --port ${{ inputs.port }} --log-transaction &
